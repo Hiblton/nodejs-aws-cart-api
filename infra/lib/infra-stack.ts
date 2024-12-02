@@ -62,8 +62,6 @@ export class InfraStack extends cdk.Stack {
         externalModules: ['@nestjs/core', '@nestjs/common', '@nestjs/platform-express'],
         nodeModules: ['nestjs'],
       },
-
-
       environment: {
         DB_HOST: dbInstance.dbInstanceEndpointAddress,
         DB_PORT: process.env.DB_PORT!,
